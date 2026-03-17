@@ -1,8 +1,8 @@
 (own vm) ● Agreed, that's the right call. evilginx2 really wants to own port 443 on its own IP.
 
 Checklist for the new VM:
-- DNS A record: evilginx2.drakonix.systems → new VM IP
-- DNS A record: *.evilginx2.drakonix.systems → new VM IP
+- DNS A record: `evilginx2.drakonixweapons.xyz` → 34.57.106.138
+- DNS A record: `*.evilginx2.drakonixweapons.xyz` → 34.57.106.138
 - Firewall: inbound 80 and 443 open (both needed — 80 for ACME, 443 for phishing)
 - Firewall: outbound 443 open (for ACME and proxying to target sites)
 - No nginx on the VM — evilginx2 owns the ports directly
